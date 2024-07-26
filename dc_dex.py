@@ -70,7 +70,7 @@ def copy_jd_gui(tools_directory, output_directory):
      for file in os.listdir(tools_directory):
          if file.startswith('jd-gui'):
             jd_gui_path = os.path.join(tools_directory, file)
-            shutil.move(jd_gui_path, output_directory)
+            shutil.copy(jd_gui_path, output_directory)
             break
 
 def decompile_dex():
